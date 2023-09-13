@@ -6,7 +6,7 @@ botao.textContent = "Clique em mim"
 
 // Adicione um evento de clique ao botão
 botao.addEventListener("click", (e) => { // sempre que houverem multiplas expressões dentro de uma função devemos usar o {}
-  let value = e.target.innerText         // o addEventListener pode receber dois parametros, o primeiro indicando a ação
+  const value = e.target.innerText       // o addEventListener pode receber dois parametros, o primeiro indicando a ação
   console.log(value)                     // que apesar de ser ums String ela conta como uma ação de parametro, poderia ser
   alert("Você clicou no botão!")         // "keydown" ou "keyup" por exemplo
     }                                    // o segundo parametro é opcional para quando quisermos captar alguma informação durante o evento

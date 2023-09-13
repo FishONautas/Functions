@@ -15,7 +15,9 @@ const listaDeCompras = [
     { nome: 'Leite', quantidade: 2 },
   ];
   
-  const listaFormatada = listaDeCompras.map((item) => `${item.quantidade} ${item.nome}`)
+  const listaFormatada = listaDeCompras.map((item) => { // é incomum que o map receba mais de uma instrução por bloco, contudo, caso isso aconteça, deve ser bem planejado
+  return `${item.quantidade} ${item.nome}`              // pois o ultimo bloco deverá ser um "return" seguido de alguma instrução para enviar valores para o novo array
+  })
   // aqui o array continua sendo um array
 
   const listaFomatadaString = listaFormatada.join(' ')
